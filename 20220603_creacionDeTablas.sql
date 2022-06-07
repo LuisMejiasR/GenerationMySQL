@@ -118,5 +118,8 @@ FOREIGN KEY (direccionId) references direcciones(id);
 ---------VER LA CREACIÓN Y DATOS DE LA TABLA EN ESPECIFICO
 show create table clientes;
 
----------EJECUTAR UN SCRIPT DE mysql
+---------SALIR DE mysql
+exit
 
+---------EJECUTAR UN SCRIPT DE mysql
+mysql -u luis <nombre_del_archivo.sql -p

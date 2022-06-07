@@ -1,6 +1,6 @@
 use generationg1;
 
--- tablas "padres"
+-- tablas sin FK
 CREATE TABLE employees(
     emp_id int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
     birth_date date NOT NULL,
