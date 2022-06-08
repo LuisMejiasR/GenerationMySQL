@@ -46,3 +46,23 @@ from products p , productlines pl
 where p.productline = pl.productline
 and pl.productline = 'Motorcycles';
 
+-- listado de productos motorcycles con el inventario de mayor a menor
+select * from products p;
+
+select * from productlines pl;
+
+-- se hace la seleccion desde las 3 columnas que nos interesan
+select p.productName, p.quantityInStock, pl.productline
+-- se dice desde que tablas se hará la consulta y se crea un alias
+from products p, productlines pl
+-- se dice que las tablas tienen que tener el mismo nombre, Motorcycles
+where p.productLine = pl.productLine 
+and p.productline = 'Motorcycles'
+-- se arregla por cantidad en stock
+order by p.quantityInStock desc;
+
+-- listado de productos Ford, por linea de producto y ordenados alfabeticamente por linea de producto
+SELECT p.productName, pl.productLine, p.quantityInStock
+FROM products p , productlines pl
+WHERE p.productName LIKE '%Ford%'
+ORDER BY pl.productLine ASC;
