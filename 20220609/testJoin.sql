@@ -1,4 +1,4 @@
--- DROP DATABASE TestJoin;
+DROP DATABASE TestJoin;
 CREATE DATABASE TestJoin;
 GO
 
@@ -28,21 +28,23 @@ INSERT INTO Grupos VALUES(3, 'Grupo3');
 INSERT INTO Grupos VALUES(4, 'Grupo4');
 INSERT INTO Grupos VALUES(5, 'Grupo5');
 INSERT INTO Grupos VALUES(6, 'Grupo6');
+INSERT INTO Grupos VALUES(7, 'Grupo7');
+INSERT INTO Grupos VALUES(8, 'Grupo8');
 
 INSERT INTO alumnos(nombre, grupo_id) VALUES('Pamela', NULL);
 INSERT INTO alumnos(nombre, grupo_id) VALUES('Israel', NULL);
 
-INSERT INTO alumnos(nombre, grupo_id) VALUES('Nicolas Neira', 2);
-INSERT INTO alumnos(nombre, grupo_id) VALUES('Genesis Quezada', 2);
-INSERT INTO alumnos(nombre, grupo_id) VALUES('Catalina Castillo', 2);
-INSERT INTO alumnos(nombre, grupo_id) VALUES('Carlos Iturra', 2);
-INSERT INTO alumnos(nombre, grupo_id) VALUES('Gabriel Guzman', 2)
-,('Leonardo Utreras', 1)
+INSERT INTO alumnos(nombre, grupo_id) VALUES('Leonardo Utreras', 1)
 ,('Luis Mejias', 1)
 ,('Francisco Cid', 1)
 ,('Francisco Perez', 1)
 ,('Marysabel Aedo', 1)
 ,('Ignacio Romero', 1)
+,('Nicolas Neira', 2)
+,('Genesis Quezada', 2)
+,('Catalina Castillo', 2)
+,('Carlos Iturra', 2)
+,('Gabriel Guzman', 2)
 ,('Alejandro', 3)
 ,('Luis', 3)
 ,('Cristobal', 3)
